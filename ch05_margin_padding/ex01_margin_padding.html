@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            border: 5px solid black;
+        }
+
+        /* div100 클래스가 적용된 요소(태그)에는 가로세로 각각 100px */
+        .div100 {
+            width: 100px;
+            height: 100px;
+        }
+        #container1 {
+            border: 5px solid red;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        #container2 {
+            border: 5px solid green;
+            margin: 10px 20px;
+            padding-top: 50px
+        }
+
+        #container3 {
+            border: 5px solid blue;
+            margin: 20px 40px 60px 80px;
+            padding: 0px 0px 0px 60px;
+        }
+
+        #container4 {
+            width: 200px;
+            height: 200px;
+            border: 5px solid yellow;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+        div를 세개 만들고 각각은 id가 적용됨
+        div 값은 container1, 2, 3
+        container1은 5px의 빨간색 실선 테두리 적용
+        container2는 5px의 녹색 실선 테두리 적용
+        container3은 5px의 파란색 실선 테두리 적용
+        div의 크기는 가로 100, 세로 100으로 지정
+     -->
+
+    <div id="container1" class="div100">안녕하세요</div>
+    <div id="container2" class="div100">반갑습니다</div>
+    <div id="container3" class="div100">힘내세요</div>
+    <div id="container4">깡!</div>
+</body>
+
+</html>

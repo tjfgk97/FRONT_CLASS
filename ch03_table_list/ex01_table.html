@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 복합선택자 : 여러 개의 요소를 한 번에 지정 */
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse; /* 선을 하나로 합치는 요소 */
+            padding: 10px;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>항목1</th>
+            <th>항목2</th>
+            <th>항목3</th>
+            <th>항목4</th>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>css</td>
+            <td>javascript</td>
+            <td rowspan="2">vscode</td>
+        </tr>
+        <tr>
+            <td>java</td>
+            <td colspan="2">database</td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="../images/google.png" width="50" height="30" alt="깡!">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
