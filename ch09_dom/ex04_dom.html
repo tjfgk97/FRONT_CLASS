@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="../images/snow flower.jpg" width="200" height="200" id="img1"><button onclick="changeImg()">이미지
+        교체</button>
+</body>
+<script>
+    const changeImg = () => {
+        const img = document.getElementById("img1");
+        // img 태그의 src 속성값 확인
+        console.log(img.src);
+        img.src = "../images/google.png";
+    }
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- id1이 적용된 h2 태그 -->
+    <h2 id="id1">html</h2>
+    <h2 id="id2">css</h2>
+    <h2 id="id3">javascript</h2>
+
+    <h2 class="class1">frontend</h2>
+    <h2 class="class2">backend</h2>
+</body>
+<script>
+    console.log(document.getElementsByTagName("h2"));
+    console.log(document.querySelectorAll("h2"));
+
+    // 특정 id가 적용된 요소 가져오기
+    const ele1 = document.getElementById("id1");
+    const ele2 = document.querySelector("#id1");
+
+    // 특정 class가 적용된 요소 가져오기
+    const ele3 = document.getElementsByClassName("class1");
+    const ele4 = document.querySelectorAll(".class1");
+</script>
+</html>
