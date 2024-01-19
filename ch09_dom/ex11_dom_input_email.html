@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="email-value" name="emailValue">
+    <input type="text" id="email-domain" name="emailDomain">
+    <select id="email-domain-select" onchange="domain_select()">
+        <option value="">직접입력</option>
+        <option value="naver.com">네이버</option>
+        <option value="gmail.com">지메일</option>
+        <option value="hanmail.com">한메일</option>
+    </select>
+</body>
+<script>
+    const domain_select = () => {
+        // 선택된 select option의 value값을 가져와서 id를 이용해 변수에 담기
+       const domain = document.getElementById("email-domain-select");
+
+       // input 태그의 id를 이용해서 변수 선언하기(변수에 저장된 select value 값을 담기 위함)
+       const domainInput = document.getElementById("email-domain");
+
+       domainInput.value = domain.value;
+    }
+
+</script>
+</html>

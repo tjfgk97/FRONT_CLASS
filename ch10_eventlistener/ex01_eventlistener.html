@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>이벤트리스너(Event Listener)</h2>
+    <button onclick="fun1()">버튼1</button>
+    <button id="btn1">버튼2</button>
+    <button id="btn2">버튼3</button>
+</body>
+<script>
+    const fun1 = () => {
+        alert("저요?");
+    }
+
+    const btn1 = document.getElementById("btn1");
+    // 익명함수
+    btn1.addEventListener("click", function(){
+        alert("버튼2 클릭");
+    });
+
+    const btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", fun1);
+
+</script>
+</html>
